@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>javascript data types</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <style>
+            .myul{
+                list-style: none;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Javascript data types</h1>
+        <ul class="myul">
+            <li>string ''/""/``</li>
+            <li>number 365,48,73.80</li>
+            <li>object {}</li>
+        </ul>
+        <h1 data-news1="news1"></h1>
+        <h2 id="news2"></h2>
+        <p data-news3="news3"></p>
+        <script src="./js/script.js"></script>
+        <script>
+            /*
+            Ajit Doval calls for concerted action against terror funding in India’s neighbourhood
+            National Security Advisor Ajit Doval at the inaugural India-Central Asia meeting of NSAs and secretaries of security councils in New Delhi on Tuesday. (PTI Photo)
+
+            */
+            var news1 ={// java script object
+                w1:"Ajit",//string
+                w2:'Doval',//string
+                w3:`calls`,//string
+                w4:"for",//string
+                w5:'connected',//string
+                w6:`action`,//string
+                w7:"againest",//string
+                w8:'terror',//string
+                w9:`funding`,//string
+                w10:"in",          //string                          
+                w11:'India is', //string                        
+                w12:`neighbourhood`,//string
+                w13:"National",//string
+                w14:'Security',//string
+                w15:`Advisor`,//string
+                w16:"Ajit",//string
+                w17:'Doval',//string
+                w18:`at`,//string
+                w19:"the",//string
+                w20:'inaugural',//string
+                w21:`India-Central`,//string
+                w22:"Asia",//string
+                w23:'meeting',//string
+                w24:`of`,//string
+                w25:"NSAs",//string
+                w26:'And',//string
+                w27:`secretaries`,//string
+                w28:"of securities",//string
+                w29:'Council',//string
+                w30:`of`,//string
+                w31:"New Delhi", //string
+                w32:'on ',//string
+                w33:`tuesday.`//string
+            }
+            var n1=news1.w1 +" "+ news1.w2 +' '+ news1.w3+` `+news1.w4 +" "+ news1.w5+' '+ news1.w6+` `+news1.w7 +" "+ news1.w8 +' '+ news1.w9+` `+news1.w10 +" "+ news1.w11 +' '+ news1.w12+` `+news1.w13 +" "+ news1.w14 +' '+ news1.w15+` `+news1.w16 +" "+ news1.w17 +' '+ news1.w18+` `+news1.w19 +" "+ news1.w20 +' '+ news1.w21+` `+news1.w22 +" "+ news1.w23 +' '+ news1.w24+` `+news1.w25 +" "+ news1.w26 +' '+ news1.w27+` `+news1.w28 +" "+ news1.w29 +' '+ news1.w30+` `+news1.w31 +" "+ news1.w32 +' '+ news1.w33;
+            console.log(n1);
+            var x = document.querySelector('h1[data-news1="news1"]');
+            x.innerHTML = n1;
+            x.style.color='blue';
+            let news2 ={
+                //javascript object
+                //Kolkata police summon Paresh Rawal over ‘cook for Bengalis’ comment
+                w1:'Kolkata',//string
+                w2:`Police`,//string
+                w3:"summon",//string
+                w4:'paresh',//string
+                w5:`Rawal`,//string
+                w6:"over",//string
+                w7:'cook',//string
+                w8:`for`,//string
+                w9:"Bengalies",//string
+                w10:`comment`//string
+            }
+            let n2=news2.w1 +" "+ news2.w2 +' '+ news2.w3+` `+news2.w4 +" "+ news2.w5+' '+ news2.w6+` `+news2.w7 +" "+ news2.w8 +' '+ news2.w9+` `+news2.w10; 
+            console.log(n2);
+            // we are use javascript id selector
+            let y = document.getElementById("news2");
+            y.innerHTML = n2;
+            y.style.color='green';
+            const news3 = {
+                //The Kolkata police have asked Paresh Rawal to appear before the investigating officer at the Taltala police station in central Kolkata on December 12
+                w1:'The',//string
+                w2:"Kolkata",//string
+                w3:`police`,//string
+                w4:'have',//string
+                w5:"asked",//string
+                w6:`Paresh`,//string
+                w7:'Rawal',//string
+                w8:"to",//string
+                w9:`appear`,//string
+                w10:'Before',//string
+                w11:"The",//string
+                w12:`Investigating`,//string
+                w13:'officer',//string
+                w14:"at",//string
+                w15:`the`,//string
+                w16:'Taltala',//string
+                w17:"Police",//string
+                w18:`Station`,//string
+                w19:'in ',//string
+                w20:"central",//string
+                w21:`Kolkata`,//string
+                w22:'on',//string
+                w23:"December",//string
+                w24:12 //number
+            }
+            const n3 =news3.w1 +" "+ news3.w2 +' '+ news3.w3+` `+news3.w4 +" "+ news3.w5+' '+ news3.w6+` `+news3.w7 +" "+ news3.w8 +' '+ news3.w9+` `+news3.w10+' '+news3.w11+' '+news3.w12+' '+ news3.w13+` `+news3.w14;' '+ news3.w15+` `+news3.w16;' '+ news3.w17+` `+news3.w18;' '+ news3.w19+` `+news3.w20;' '+ news3.w21+` `+news3.w22;' '+ news3.w23+` `+news3.w24; 
+            console.log(n3);
+            // we are use javascript id selector
+            const z = document.querySelector('p[data-news3="news3"]');
